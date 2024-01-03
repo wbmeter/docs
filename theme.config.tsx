@@ -1,18 +1,20 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import { DocsThemeConfig } from "nextra-theme-docs";
+import LastUpdatedAt from "./components/LastUpdatedAt";
+import { Logo } from "./components/Logo";
+import { ProjectLogo } from "./components/ProjectLogo";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  logo: <Logo />,
+  project: { link: "https://neuromarket.online/", icon: <ProjectLogo /> },
+  docsRepositoryBase: "http://localhost:3000/",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "Нейромаркет — Документация © 2024 ",
   },
-}
+  primaryHue: 200,
+  primarySaturation: 255,
+  feedback: { content: null },
+  editLink: { text: "" },
+  gitTimestamp: LastUpdatedAt,
+};
 
-export default config
+export default config;

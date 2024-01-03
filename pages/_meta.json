@@ -1,15 +1,11 @@
 {
-  "index": "Introduction",
+  "index": "Вступление",
   "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "extension": "Расширение",
   "contact": {
-    "title": "Contact ↗",
+    "title": "Чат Поддержки",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://t.me/neuromarket_chat",
     "newWindow": true
   }
 }
