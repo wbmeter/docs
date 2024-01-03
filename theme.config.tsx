@@ -12,7 +12,18 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 200,
   primarySaturation: 255,
+  darkMode: true,
   feedback: { content: null },
+  nextThemes: {
+    defaultTheme: "dark",
+  },
+  themeSwitch: {
+    useOptions: {
+      dark: "Темный",
+      light: "Светлый",
+      system: "Системный",
+    },
+  },
   editLink: { text: "" },
   search: { placeholder: "Поиск по документации" },
   gitTimestamp: LastUpdatedAt,
