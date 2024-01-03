@@ -14,6 +14,7 @@ const config: DocsThemeConfig = {
   primarySaturation: 255,
   feedback: { content: null },
   editLink: { text: "" },
+  search: { placeholder: "Поиск по документации" },
   gitTimestamp: LastUpdatedAt,
 };
 
