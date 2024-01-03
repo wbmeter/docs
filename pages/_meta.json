@@ -1,6 +1,9 @@
 {
   "index": "Вступление",
   "another": "Another Page",
+  "---": {
+    "type": "separator"
+  },
   "extension": "Расширение",
   "contact": {
     "title": "Чат Поддержки",
