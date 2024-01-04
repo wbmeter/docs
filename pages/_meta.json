@@ -1,10 +1,16 @@
 {
   "index": "Вступление",
-  "another": "Another Page",
-  "---": {
+  "-": {
     "type": "separator"
   },
   "extension": "Расширение",
+  "--": {
+    "type": "separator"
+  },
+  "telegram-bot": "Телеграм-Бот",
+  "---": {
+    "type": "separator"
+  },
   "contact": {
     "title": "Чат Поддержки",
     "type": "page",
