@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 200,
   primarySaturation: 255,
-  darkMode: true,
+  
   feedback: { content: null },
   nextThemes: {
     defaultTheme: "dark",
@@ -23,6 +23,9 @@ const config: DocsThemeConfig = {
       light: "Светлый",
       system: "Системный",
     },
+  },
+  toc: {
+    title: "На этой странице"
   },
   editLink: { text: "" },
   search: { placeholder: "Поиск по документации" },
