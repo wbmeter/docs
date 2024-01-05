@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 200,
   primarySaturation: 255,
-  
+
   feedback: { content: null },
   nextThemes: {
     defaultTheme: "dark",
@@ -26,28 +26,43 @@ const config: DocsThemeConfig = {
     },
   },
   toc: {
-    title: "На этой странице"
+    title: "На этой странице",
   },
-  useNextSeoProps: () => ({titleTemplate: '%s — Нейромаркет'}),
+  useNextSeoProps: () => ({ titleTemplate: "%s — Нейромаркет" }),
   head: () => {
-    const { asPath, defaultLocale, locale } = useRouter()
-    const { frontMatter } = useConfig()
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter } = useConfig();
     const url =
-      'https://docs.neuromarket.online' +
-      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
- 
+      "https://docs.neuromarket.online" +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || 'Нейромаркет — Документация'} />
+        <meta
+          property="og:title"
+          content={frontMatter.title || "Нейромаркет — Документация"}
+        />
         <meta
           property="og:description"
-          content={frontMatter.description || 'Инструкции по сервису внешней аналитики, телеграм-боту и расширению для рекламы на Wildberries'}
+          content={
+            frontMatter.description ||
+            "Инструкции по сервису внешней аналитики, телеграм-боту и расширению для рекламы на Wildberries"
+          }
         />
         <link rel="canonical" href={url}></link>
       </>
+    );
+  },
+  banner: {
+    key: 'questions',
+    text: (
+      <a href="https://t.me/neuromarket_chat" target="_blank">
+        🎉 Нет ответа на ваш вопрос?. Напишите нам в Телеграм →
+      </a>
     )
   },
+  darkMode: false,
   editLink: { text: "" },
   search: { placeholder: "Поиск по документации" },
   gitTimestamp: LastUpdatedAt,
