@@ -55,12 +55,12 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: 'questions',
+    key: "questions",
     text: (
       <a href="https://t.me/neuromarket_chat" target="_blank">
         🎉 Нет ответа на ваш вопрос?. Напишите нам в Телеграм →
       </a>
-    )
+    ),
   },
   darkMode: false,
   editLink: { text: "" },
