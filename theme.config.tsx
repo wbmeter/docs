@@ -58,7 +58,7 @@ const config: DocsThemeConfig = {
     key: "questions",
     text: (
       <a href="https://t.me/neuromarket_chat" target="_blank">
-        🎉 Нет ответа на ваш вопрос?. Напишите нам в Телеграм →
+        🎉 Не нашли ответ? Напишите нам →
       </a>
     ),
   },
