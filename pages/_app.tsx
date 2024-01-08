@@ -5,7 +5,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <YandexMetrika />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

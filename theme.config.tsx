@@ -13,7 +13,6 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 200,
   primarySaturation: 255,
-
   feedback: { content: null },
   nextThemes: {
     defaultTheme: "dark",
