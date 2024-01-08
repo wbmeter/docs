@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "neuromarket-docs-nextra",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Документация сервиса Нейромаркет",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,12 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Stanislav Gelman <glmnio@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/wbmeter/docs/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/wbmeter/docs",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "heroicons": "^2.1.1",
