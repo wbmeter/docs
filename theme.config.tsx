@@ -7,7 +7,7 @@ import { ProjectLogo } from "./components/ProjectLogo";
 const config: DocsThemeConfig = {
   logo: <Logo />,
   project: { link: "https://neuromarket.online/", icon: <ProjectLogo /> },
-  docsRepositoryBase: "http://localhost:3000/",
+  docsRepositoryBase: "https://github.com/wbmeter/docs/tree/main/",
   footer: {
     text: "Нейромаркет — Документация © 2024 ",
   },
@@ -54,7 +54,8 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "questions",
+    key: "questions-v2",
+    dismissible: false,
     text: (
       <a href="https://t.me/neuromarket_chat" target="_blank">
         🎉 Не нашли ответ? Напишите нам →
@@ -62,7 +63,7 @@ const config: DocsThemeConfig = {
     ),
   },
   darkMode: false,
-  editLink: { text: "" },
+  editLink: { text: "Редактировать Страницу" },
   search: { placeholder: "Поиск по документации" },
   gitTimestamp: LastUpdatedAt,
 };
