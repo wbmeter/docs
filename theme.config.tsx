@@ -37,6 +37,7 @@ const config: DocsThemeConfig = {
 
     return (
       <>
+        <meta name="yandex-verification" content="711acae3e02f0067" />
         <meta property="og:url" content={url} />
         <meta
           property="og:title"
