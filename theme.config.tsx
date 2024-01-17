@@ -50,6 +50,7 @@ const config: DocsThemeConfig = {
             "Инструкции по сервису внешней аналитики, телеграм-боту и расширению для рекламы на Wildberries"
           }
         />
+        <link rel="icon" href="https://docs.neuromarket.online/favicon.ico" type="image/x-icon"></link>
         <link rel="canonical" href={url}></link>
       </>
     );
