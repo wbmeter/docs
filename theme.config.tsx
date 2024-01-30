@@ -25,7 +25,7 @@ const config: DocsThemeConfig = {
     },
   },
   toc: {
-    title: "На этой странице",
+    title: "Содержание страницы",
   },
   useNextSeoProps: () => ({ titleTemplate: "%s — Нейромаркет" }),
   head: () => {
