@@ -1,7 +1,7 @@
 {
   "name": "neuromarket-docs-nextra",
   "version": "0.0.1",
-  "description": "Документация сервиса Нейромаркет",
+  "description": "Документация сервиса и расширения Нейромаркет",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
