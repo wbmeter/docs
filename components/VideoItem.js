@@ -19,7 +19,7 @@ export function VideoItem({
           src={`https://i.ytimg.com/vi/${ytVideoId}/default.jpg`}
         />
       </div>
-      <div className="flex flex-col w-full flex-1 items-start justify-center gap-1 md:gap-2 p-0 m-0">
+      <div className="flex flex-col w-full flex-1 items-start justify-center gap-1 p-0 m-0">
         <span className="text-xs md:text-sm xl:text-lg font-bold">{title}</span>
         <div className="flex gap-1 text-xs items-center">
           <div className="hidden md:flex items-center">
