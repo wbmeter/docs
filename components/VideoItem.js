@@ -19,23 +19,23 @@ export function VideoItem({
           src={`https://i.ytimg.com/vi/${ytVideoId}/default.jpg`}
         />
       </div>
-      <div className="flex flex-col flex-1 items-start justify-center gap-1 md:gap-2 p-0 m-0">
+      <div className="flex flex-col w-full flex-1 items-start justify-center gap-1 md:gap-2 p-0 m-0">
         <span className="text-xs md:text-sm xl:text-lg font-bold">{title}</span>
         <div className="flex gap-1 text-xs items-center">
-          <div className="flex items-center">
+          <div className="hidden md:flex items-center">
             <img className="rounded-full w-5" src={`/authors/${authorImage}`} />
           </div>
           <div>{authorName}</div>
           {ytChannelLink ? (
             <>
               <a
-                className="hidden md:block text-[11px] px-2 py-0.5 bg-red-700/50 hover:bg-red-700 text-slate-100/60 hover:text-slate-100"
+                className="hidden md:flex gap-1 text-[11px] px-2 py-0.5 bg-red-700/50 hover:bg-red-700 text-slate-100/60 hover:text-slate-100"
                 target="_blank"
                 href={
                   ytChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
                 }
               >
-                Канал в YouTube
+                YouTube <span className="hidden lg:block">Канал</span>
               </a>
             </>
           ) : (
@@ -44,13 +44,13 @@ export function VideoItem({
           {tgChannelLink ? (
             <>
               <a
-                className="text-[11px] px-2 py-0.5 bg-sky-700/50 hover:bg-sky-700 text-slate-100/60 hover:text-slate-100"
+                className="flex gap-1 text-[11px] px-2 py-0.5 bg-sky-700/50 hover:bg-sky-700 text-slate-100/60 hover:text-slate-100"
                 target="_blank"
                 href={
                   tgChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
                 }
               >
-                Telegram Канал
+                Telegram <span className="hidden lg:block">Канал</span>
               </a>
             </>
           ) : (
@@ -58,7 +58,7 @@ export function VideoItem({
           )}
         </div>
       </div>
-      <div className="flex justify-center items-center p-2 md:p-5 opacity-50 group-hover:opacity-100">
+      <div className="hidden lg:flex justify-center items-center p-2 md:p-5 opacity-50 group-hover:opacity-100">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
