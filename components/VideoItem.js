@@ -4,19 +4,17 @@ export function VideoItem({
   title,
   authorImage,
   authorName,
-  videoImage,
   ytVideoId,
   ytChannelLink = null,
-  tgChannelLink = null,
-  ytThumbnail = "mq1",
+  tgChannelLink = null
 }) {
   return (
     <Link
       target="_blank"
       href={"https://www.youtube.com/watch?v=" + ytVideoId}
-      className="flex gap-4 rounded-lg border-zinc-700 border h-14 md:h-20 hover:bg-zinc-900 hover:cursor-pointer group"
+      className="flex gap-4 rounded-lg border-zinc-700 border h-14 md:h-20 hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
     >
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-start p-0 m-0">
         <img
           className="h-full rounded-lg"
           src={`https://i.ytimg.com/vi/${ytVideoId}/default.jpg`}
@@ -66,7 +64,7 @@ export function VideoItem({
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="w-5 h-5 md:h-6 md:w-6"
+          className="w-5 h-5 md:h-6 md:w-6"
         >
           <path
             fill-rule="evenodd"
