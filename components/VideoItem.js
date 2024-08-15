@@ -9,10 +9,9 @@ export function VideoItem({
   tgChannelLink = null
 }) {
   return (
-    <Link
-      target="_blank"
-      href={"https://www.youtube.com/watch?v=" + ytVideoId}
-      className="flex gap-4 rounded-lg border-zinc-700 border h-14 md:h-20 hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
+    <div
+      onClick={() => window.open("https://www.youtube.com/watch?v=" + ytVideoId)}
+      className="flex gap-2 justify-start rounded-lg border-zinc-700 border h-14 md:h-20 hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
     >
       <div className="flex items-center justify-start p-0 m-0">
         <img
@@ -67,12 +66,12 @@ export function VideoItem({
           className="w-5 h-5 md:h-6 md:w-6"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           />
         </svg>
       </div>
-    </Link>
+    </div>
   );
 }
