@@ -11,11 +11,11 @@ export function VideoItem({
   return (
     <div
       onClick={() => window.open("https://www.youtube.com/watch?v=" + ytVideoId)}
-      className="flex gap-2 justify-start rounded-lg border-zinc-700 border h-14 md:h-20 hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
+      className="flex gap-2 justify-start rounded-lg overflow-hidden border-zinc-700 border h-14 md:h-[70px] hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
     >
-      <div className="flex items-center justify-start p-0 m-0">
+      <div className="flex items-center overflow-hidden justify-start p-0 m-0 aspect-video h-full">
         <img
-          className="h-full rounded-lg"
+          className="w-[120px]"
           src={`https://i.ytimg.com/vi/${ytVideoId}/default.jpg`}
         />
       </div>
