@@ -29,7 +29,7 @@ export function VideoItem({
           {ytChannelLink ? (
             <>
               <a
-                className="hidden md:flex gap-1 text-[11px] px-2 py-0.5 bg-red-700/50 hover:bg-red-700 text-slate-100/60 hover:text-slate-100"
+                className="hidden md:flex gap-1 text-[11px] px-2 py-0.5 bg-red-700/70 hover:bg-red-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
                 href={
                   ytChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
@@ -44,7 +44,7 @@ export function VideoItem({
           {tgChannelLink ? (
             <>
               <a
-                className="flex gap-1 text-[11px] px-2 py-0.5 bg-sky-700/50 hover:bg-sky-700 text-slate-100/60 hover:text-slate-100"
+                className="flex gap-1 text-[11px] px-2 py-0.5 bg-sky-700/70 hover:bg-sky-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
                 href={
                   tgChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
