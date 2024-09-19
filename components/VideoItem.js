@@ -6,11 +6,13 @@ export function VideoItem({
   authorName,
   ytVideoId,
   ytChannelLink = null,
-  tgChannelLink = null
+  tgChannelLink = null,
 }) {
   return (
     <div
-      onClick={() => window.open("https://www.youtube.com/watch?v=" + ytVideoId)}
+      onClick={() =>
+        window.open("https://www.youtube.com/watch?v=" + ytVideoId)
+      }
       className="flex gap-2 justify-start rounded-lg overflow-hidden border-zinc-800/70 border h-14 min-h-14 md:h-[70px] md:min-h-[70px] hover:bg-zinc-900 hover:cursor-pointer group p-0 m-0"
     >
       <div className="flex items-center overflow-hidden justify-start p-0 m-0 aspect-video h-full">
@@ -31,6 +33,7 @@ export function VideoItem({
               <a
                 className="hidden md:flex gap-1 text-[11px] px-2 py-0.5 bg-red-700/70 hover:bg-red-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
+                onClick={(e) => e.stopPropagation()}
                 href={
                   ytChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
                 }
@@ -46,6 +49,7 @@ export function VideoItem({
               <a
                 className="flex gap-1 text-[11px] px-2 py-0.5 bg-sky-700/70 hover:bg-sky-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
+                onClick={(e) => e.stopPropagation()}
                 href={
                   tgChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
                 }
