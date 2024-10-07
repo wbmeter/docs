@@ -1,13 +1,8 @@
 import Link from "next/link";
+import authors from "./authors.js";
 
-export function VideoItem({
-  title,
-  authorImage,
-  authorName,
-  ytVideoId,
-  ytChannelLink = null,
-  tgChannelLink = null,
-}) {
+export function VideoItem({ author, title, ytVideoId }) {
+  const { name, image, tgLink, ytLink } = authors[author];
   return (
     <div
       onClick={() =>
@@ -25,18 +20,16 @@ export function VideoItem({
         <span className="text-xs md:text-sm xl:text-lg font-bold">{title}</span>
         <div className="flex gap-1 text-xs items-center">
           <div className="hidden md:flex items-center">
-            <img className="rounded-full w-5" src={`/authors/${authorImage}`} />
+            <img className="rounded-full w-5" src={`/authors/${image}`} />
           </div>
-          <div>{authorName}</div>
-          {ytChannelLink ? (
+          <div>{name}</div>
+          {ytLink ? (
             <>
               <a
                 className="hidden md:flex gap-1 text-[11px] px-2 py-0.5 bg-red-700/70 hover:bg-red-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                href={
-                  ytChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
-                }
+                href={ytLink + "?utm_source=neuromarket&utm_campaign=docs"}
               >
                 YouTube <span className="hidden lg:block">Канал</span>
               </a>
@@ -44,15 +37,13 @@ export function VideoItem({
           ) : (
             ""
           )}
-          {tgChannelLink ? (
+          {tgLink ? (
             <>
               <a
                 className="flex gap-1 text-[11px] px-2 py-0.5 bg-sky-700/70 hover:bg-sky-700 text-slate-100/80 hover:text-slate-100"
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                href={
-                  tgChannelLink + "?utm_source=neuromarket&utm_campaign=docs"
-                }
+                href={tgLink + "?utm_source=neuromarket&utm_campaign=docs"}
               >
                 Telegram <span className="hidden lg:block">Канал</span>
               </a>
