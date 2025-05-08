@@ -2,7 +2,7 @@ export default {
   david_movsesyan: {
     name: "Давид Мовсесян",
     image: "david.jpg",
-    tgLink: "https://t.me/+yZRtfIKCTlswODUy",
+    tgLink: "https://t.me/+e4jCZ77Uc5VhNDUy",
     ytLink: "https://www.youtube.com/channel/UC92qg5EDbIHXAtKZhraph6w",
   },
   nikita_romanov: {
